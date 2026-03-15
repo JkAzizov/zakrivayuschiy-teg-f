@@ -282,10 +282,6 @@
   display: block;
 }
 
-.dialog:opened {
-  display: grid;
-}
-
 .dialog__text {
   font-family: var(--accent-font);
   line-height: 1.5;
