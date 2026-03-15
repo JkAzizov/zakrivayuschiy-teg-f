@@ -279,6 +279,10 @@
 }
 
 .dialog[open] {
+  display: block;
+}
+
+.dialog:opened {
   display: grid;
 }
 
