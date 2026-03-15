@@ -270,15 +270,19 @@
   padding: 30px;
 }
 
-.dialog[open] .dialog__content{
+.dialog[open] .dialog__content {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 20px;
 }
 
-.dialog:not([open]) {
+.dialog {
   display: none;
+}
+
+.dialog[open] {
+  display: block;
 }
 
 .dialog__text {
