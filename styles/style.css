@@ -272,7 +272,7 @@
 }
 
 .dialog[open] {
-  display: grid;
+  display: block;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 20px;
