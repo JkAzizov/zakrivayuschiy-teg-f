@@ -271,15 +271,15 @@
   display: none;
 }
 
+.dialog[open] {
+  display: block;
+}
+
 .dialog[open] .dialog__content {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 20px;
-}
-
-.dialog[open] {
-  display: block;
 }
 
 .dialog__text {
