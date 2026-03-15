@@ -268,6 +268,7 @@
   max-width: 350px;
   border: 2px solid black;
   padding: 30px;
+  display: none;
 }
 
 .dialog[open] .dialog__content {
@@ -277,12 +278,8 @@
   gap: 20px;
 }
 
-.dialog {
-  display: none;
-}
-
 .dialog[open] {
-  display: block;
+  display: grid;
 }
 
 .dialog__text {
