@@ -272,18 +272,14 @@
 }
 
 .dialog[open] {
-  display: block;
-}
-
-.dialog[open] .dialog__content {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 20px;
 }
 
-.dialog:opened {
-  display: grid;
+.dialog[open] .dialog__content {
+  display: contents;
 }
 
 .dialog__text {
