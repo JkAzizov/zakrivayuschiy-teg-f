@@ -12,13 +12,13 @@ const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
 
-iconButtonArray.forEach((iconButton, index) => {
-  iconButton.onclick = () =>
-    toggleIsLiked(likeHeartArray[index], likeButtonArray[index]);
-});
-
-likeButtonArray.forEach((button, index) => {
-  button.onclick = () => toggleIsLiked(likeHeartArray[index], button);
+iconButtonArray.forEach((iconButton, index) => { 
+  iconButton.onclick = () => 
+    toggleIsLiked(iconButtonArray[index], likeButtonArray[index]); 
+}); 
+ 
+likeButtonArray.forEach((button, index) => { 
+  button.onclick = () => toggleIsLiked(iconButtonArray[index], button); 
 });
 
 function toggleIsLiked(heart, button) {
